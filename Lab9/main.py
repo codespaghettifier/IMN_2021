@@ -89,7 +89,7 @@ def main():
 
         if iteration in map_iterations:
             draw_nodes(t.reshape(nx + 1, ny + 1), f"temperature_map_it{iteration}.png")
-            draw_nodes(diffusion_map(t1, t, delta_t).reshape(nx + 1, ny + 1), f"diffusion_map_it{iteration}.png")
+            draw_nodes(diffusion_map(t, t1, delta_t).reshape(nx + 1, ny + 1), f"diffusion_map_it{iteration}.png")
 
         t = t1
 
